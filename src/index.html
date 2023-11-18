@@ -5,20 +5,65 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Base Template</title>
+  <title>Lottiefiles Test</title>
 </head>
 
 <body>
+  <link rel="stylesheet" href="./prism.css">
+  <script src="./prism.js"></script>
 
-  <img src="/public/Test.png" alt="TestBild">
+  <h1>Lottiefiles Test</h1>
 
-  <h1>Lottie JSON:</h1>
-
-
-  <h1>dotLottie:</h1>
-
+  <br>
+  <br>
+  <br>
 
 
+  <h2>Lottie Skripte für WebPlayer einbinden</h2>
+  <pre>
+    <code class="language-html">
+      &lt;script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"&gt;&lt;/script&gt;
+      &lt;script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"&gt;&lt;/script&gt;
+    </code>
+  </pre>
+
+  <br>
+  <br>
+
+  <h2>Lottie JSON File:</h2>
+  <lottie-player src="./TestKomp.json" background="transparent" speed="1" style="width: 300px; height: 300px"
+    direction="1" mode="normal" loop controls autoplay>
+  </lottie-player>
+
+  <pre>
+    <code class="language-html">
+      &lt;lottie-player src="https://lottie.host/272b60dd-462d-42a3-8ed6-fec4143633d6/X4FxBascRI.json" 
+      background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" 
+      loop controls autoplay hover&gt;
+      &lt;/lottie-player&gt;
+    </code>
+  </pre>
+
+  <br>
+  <br>
+
+  <h2>dotLottie File:</h2>
+  <dotlottie-player src="./TestKomp.lottie"
+    background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop
+    autoplay>
+  </dotlottie-player>
+  <pre>
+    <code class="language-html">
+      &lt;dotlottie-player src="https://lottie.host/272b60dd-462d-42a3-8ed6-fec4143633d6/X4FxBascRI.json" 
+      background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" 
+      loop controls autoplay hover&gt;
+      &lt;/dotlottie-player&gt;
+    </code>
+  </pre>
+
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   <script type="module" src="./js/main.js"></script>
 </body>
 
