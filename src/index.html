@@ -9,10 +9,10 @@
 </head>
 
 <body>
-  <link rel="stylesheet" href="./prism.css">
-  <script src="./prism.js"></script>
+  <link rel="stylesheet" href="./assets/prism.css">
 
   <h1>Lottiefiles Test</h1>
+  <h4>Mit After Effects erstellte Ballanimation wurde mit Lottiefile Plugin rausgerendert und mit dem WebPlayer eingebunden.</h4>
 
   <br>
   <br>
@@ -31,15 +31,15 @@
   <br>
 
   <h2>Lottie JSON File:</h2>
-  <lottie-player src="./TestKomp.json" background="transparent" speed="1" style="width: 300px; height: 300px"
+  <lottie-player id="lottie-player" src="./assets/TestKomp.json" background="transparent" speed="1" style="width: 300px; height: 300px"
     direction="1" mode="normal" loop controls autoplay>
   </lottie-player>
 
   <pre>
     <code class="language-html">
-      &lt;lottie-player src="https://lottie.host/272b60dd-462d-42a3-8ed6-fec4143633d6/X4FxBascRI.json" 
-      background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" 
-      loop controls autoplay hover&gt;
+      &lt;lottie-player src="Source/File.json" 
+                background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" 
+                loop controls autoplay hover&gt;
       &lt;/lottie-player&gt;
     </code>
   </pre>
@@ -48,22 +48,25 @@
   <br>
 
   <h2>dotLottie File:</h2>
-  <dotlottie-player src="./TestKomp.lottie"
+  <dotlottie-player id="dotlottie-player" src="./assets/TestKomp.lottie"
     background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop
     autoplay>
   </dotlottie-player>
+
   <pre>
     <code class="language-html">
-      &lt;dotlottie-player src="https://lottie.host/272b60dd-462d-42a3-8ed6-fec4143633d6/X4FxBascRI.json" 
-      background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" 
-      loop controls autoplay hover&gt;
+      &lt;dotlottie-player src="Source/File.json" 
+                background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" 
+                loop controls autoplay hover&gt;
       &lt;/dotlottie-player&gt;
     </code>
   </pre>
 
 
+  <script src="./assets/prism.js" type="module"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  
   <script type="module" src="./js/main.js"></script>
 </body>
 
